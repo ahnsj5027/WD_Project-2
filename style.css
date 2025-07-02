@@ -1,0 +1,281 @@
+/* General setup */
+
+/* * {
+  box-sizing: border-box;
+}*/
+
+/*body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }*/
+
+/* Layout */
+
+/* section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }*/
+
+/*nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }*/
+
+/* header and footer */
+
+/* header {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+*/
+
+/* footer {
+  border-top: 5px solid #a66;
+}*/
+
+/* ----- WRITE YOUR CODE BELOW HERE ----- */
+
+/* Style the body */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 100px;
+  max-width: auto;
+  font-family: "open sans", sans-serif;
+  font-size: auto;
+  letter-spacing: 1px;
+  background-image: url("img/paper.jpg");
+}
+
+/* Style the header */
+header {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+  background: lightblue url("img/campus.jpg") no-repeat scroll center;
+  height: 300px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+ }
+
+h1 {
+  border-style: single;
+  background-color: rgba(173, 216, 230, 0.9);
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 10px;
+}
+
+section, nav {
+  padding: 10px 80px;
+}
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+}
+
+/* Links - change color on visit */
+.topnav a:visited {
+  color: red;
+  text-decoration: none;
+  background-color: cyan;
+}
+
+a:visited {
+  color: red;
+  text-decoration: none;
+  background-color: cyan;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #c0b0b0;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #c0b0b0;
+  color: black;
+  text-decoration: none;
+}
+
+/* Links - change color on active */
+.topnav a:active {
+  color: blue;
+  text-decoration: none;
+  background-color: hotpink;
+}
+
+a:active {
+  color: blue;
+  text-decoration: none;
+  background-color: hotpink;
+}
+
+/* Links - list style */
+.listStyle_topCourse {
+  list-style-type: square;
+}
+
+/* Layout - Main */
+.column {
+  float: left;
+  padding: 20px;
+}
+
+.column.sideLeft {
+  float: left;
+  width: 20%;
+}
+
+.column.middle {
+  float: left;
+  width: 60%;
+  padding: 20px 60px;
+}
+
+.column.sideRight {
+  float: center;
+  width: 20%;
+}
+
+.column.sideLeft img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.column.sideRight img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+/* Add a card effect for articles */
+.card_left {
+  background-color: cadetblue;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px 20px;
+  margin-top: 10px;
+}
+
+.card_middle {
+  background-color: bisque;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card_right {
+  background-color: burlywood;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+  .column.sideLeft,
+  .column.middle,
+  .column.sideRight {
+    width: 100%;
+  }
+}
+
+/* Responsive laypout - make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Google Fonts */
+.googleFont_1 {
+  border-style: double;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: black;
+  padding: 29px 23px;
+  background-color: black;
+  color: white;
+  font-family: "Sofia", sans-serif;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.googlefont_2 {
+  font-family: "Trirong", serif;
+}
+
+/* Text Format */
+p, ul, ol {
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: rgb(117, 9, 9);
+}
+
+/* Image Description */
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Style the footer */
+footer {
+  border-top: 5px solid #a66;
+  clear: both;
+  height: 70px;
+  background-color: rgb(193, 239, 255);
+}
